@@ -7,7 +7,7 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const DIST_DIR = path.join(import.meta.dirname, "dist");
+const DIST_DIR = path.join(process.cwd(), "dist");
 
 /**
  * Creates a new MCP server instance with tools and resources registered.

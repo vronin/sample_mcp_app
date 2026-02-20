@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cross-env INPUT=mcp-app.html vite build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/mcp.ts": {
+      "includeFiles": "dist/**"
+    }
+  },
+  "rewrites": [
+    { "source": "/mcp", "destination": "/api/mcp" }
+  ]
+}
