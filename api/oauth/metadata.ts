@@ -3,7 +3,7 @@ import type { Request, Response } from "express";
 
 const app = express();
 
-app.get("/", (req: Request, res: Response) => {
+app.use((req: Request, res: Response) => {
   const issuer = `https://${req.headers.host}`;
   res.json({
     issuer,

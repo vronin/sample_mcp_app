@@ -4,7 +4,7 @@ import type { Request, Response } from "express";
 
 const app = express();
 
-app.get("/", (req: Request, res: Response) => {
+app.use((req: Request, res: Response) => {
   const { redirect_uri, state } = req.query as Record<string, string>;
 
   if (!redirect_uri) {

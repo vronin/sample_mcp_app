@@ -5,7 +5,7 @@ import type { Request, Response } from "express";
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 
-app.post("/", (_req: Request, res: Response) => {
+app.use((_req: Request, res: Response) => {
   res.json({
     access_token: crypto.randomUUID(),
     token_type: "Bearer",
