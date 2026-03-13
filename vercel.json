@@ -9,6 +9,7 @@
   },
   "rewrites": [
     { "source": "/.well-known/oauth-protected-resource", "destination": "/api/protected-resource" },
-    { "source": "/mcp", "destination": "/api/mcp" }
+    { "source": "/mcp", "destination": "/api/mcp" },
+    { "source": "/test", "destination": "/api/test" }
   ]
 }
