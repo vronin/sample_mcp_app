@@ -7,7 +7,7 @@ app.use((_req: Request, res: Response) => {
   res.json({
     resource: "https://sample-mcp-pttgpnn83-aembit.vercel.app",
     authorization_servers: ["https://22a7a6.mcp.qa.aembit-eng.com"],
-    scopes_supported: ["offline_access"],
+    scopes_supported: ["openid", "profile", "email"],
     bearer_methods_supported: ["header"],
   });
 });
