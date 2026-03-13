@@ -3,6 +3,8 @@ import type { Request, Response } from "express";
 
 const app = express();
 
+
+
 app.use((_req: Request, res: Response) => {
   res.json({
     resource: "https://sample-mcp-pttgpnn83-aembit.vercel.app",
