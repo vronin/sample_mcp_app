@@ -7,9 +7,9 @@ app.use((req: Request, res: Response) => {
   const issuer = `https://${req.headers.host}`;
   res.json({
     issuer,
-    authorization_endpoint: `${issuer}/oauth/authorize`,
-    token_endpoint: `${issuer}/oauth/token`,
-    registration_endpoint: `${issuer}/oauth/register`,
+    authorization_endpoint: `${issuer}/api/oauth/authorize`,
+    token_endpoint: `${issuer}/api/oauth/token`,
+    registration_endpoint: `${issuer}/api/oauth/register`,
     response_types_supported: ["code"],
     grant_types_supported: ["authorization_code", "refresh_token"],
     code_challenge_methods_supported: ["S256"],
